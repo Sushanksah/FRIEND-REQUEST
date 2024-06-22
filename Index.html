@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- List of Friend requests -->
+   <div class="hide1"> <!-- Use this hide1 class to hide the List of Friend requests when visiting profile to take action -->
+        <div class="requestList">
+            <h2>Friend requests</h2>
+
+            <!-- 1st list -->
+            <div class="request"> <!-- Individual list of requests -->
+                <div class="dp"> <!-- Contains Profile photo inside -->
+                    <img src="dp.jpg" alt="">
+                </div>
+                <h6>Sushank sah</h6>
+                <button class="btn1" data-img="dp.jpg" data-name="Sushank sah">Take action</button> <!-- When clicked, it redirects inside Profile to accept or ignore request -->
+            </div>
+            
+            <!-- 2nd list -->
+            <div class="request"> <!-- Individual list of requests -->
+                <div class="dp"> <!-- Contains Profile photo inside -->
+                    <img src="dp2.JPG" alt="">
+                </div>
+                <h6>Rishi sah</h6>
+                <button class="btn1" data-img="dp2.jpg" data-name="Rishi sah">Take action</button> <!-- When clicked, it redirects inside Profile to accept or ignore request -->
+            </div>
+
+            <!-- 3rd list -->
+            <div class="request"> <!-- Individual list of requests -->
+                <div class="dp"> <!-- Contains Profile photo inside -->
+                    <img src="dp3.JPG" alt="">
+                </div>
+                <h6>Pawan sah</h6>
+                <button class="btn1" data-img="dp3.jpg" data-name="Pawan sah">Take action</button> <!-- When clicked, it redirects inside Profile to accept or ignore request -->
+            </div>
+
+            <!-- 4th list -->
+            <div class="request"> <!-- Individual list of requests -->
+                <div class="dp"> <!-- Contains Profile photo inside -->
+                    <img src="dp4.JPG" alt="">
+                </div>
+                <h6>Rani sah</h6>
+                <button class="btn1" data-img="dp4.jpg" data-name="Rani sah">Take action</button> <!-- When clicked, it redirects inside Profile to accept or ignore request -->
+            </div>
+        </div>
+   </div>
+
+   <!-- Individual Profile -->
+    <div class="hide2"> <!-- Initially this class is active to hide the individual profile and shows only the list of friend requests -->
+        <div class="container">
+            <img src="" id="profile-img" alt="img...">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <h1 id="profile-name"></h1>
+            <div id="msg">Sent you request.</div> <!-- This message depends on the Accept or Ignore action button -->
+            <div class="btn"> <!-- Contains both Accept and Ignore buttons -->
+                <button id="accept">Accept</button> <!-- Accepts friend request when tapped on it and also sends request -->
+                <button id="remove" class="hide">Ignore</button> <!-- Ignores friend request or removes the friend by tapping on it -->
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
